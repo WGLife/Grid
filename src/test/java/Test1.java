@@ -1,3 +1,4 @@
+import org.junit.After;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
@@ -14,4 +15,8 @@ public class Test1 extends TestBase {
         driver.navigate().to("https://mail.ru");
     }
 
+    @After
+    public void teardown() {
+        driver.close();
+    }
 }

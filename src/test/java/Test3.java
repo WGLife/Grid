@@ -1,6 +1,9 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
@@ -12,16 +15,15 @@ public class Test3 {
 
     @Test
     public void test4() throws MalformedURLException {
-        System.out.println("Test3 class test4");
         DesiredCapabilities caps = DesiredCapabilities.firefox();
         WebDriver driver = new RemoteWebDriver(new URL("http://172.16.64.131:4444/wd/hub"), caps);
         driver.navigate().to("https://mail.ru");
+        new WebDriverWait(driver, 15).until(ExpectedConditions.presenceOfElementLocated(By.id("dsdsdsds")));
         driver.close();
     }
 
     @Test
     public void test5() throws MalformedURLException {
-        System.out.println("Test3 class test5");
         DesiredCapabilities caps = DesiredCapabilities.firefox();
         WebDriver driver = new RemoteWebDriver(new URL("http://172.16.64.131:4444/wd/hub"), caps);
         driver.navigate().to("https://mail.ru");
@@ -30,10 +32,10 @@ public class Test3 {
 
     @Test
     public void test6() throws MalformedURLException {
-        System.out.println("Test3 class test6");
         DesiredCapabilities caps = DesiredCapabilities.firefox();
         WebDriver driver = new RemoteWebDriver(new URL("http://172.16.64.131:4444/wd/hub"), caps);
         driver.navigate().to("https://mail.ru");
+        new WebDriverWait(driver, 15).until(ExpectedConditions.presenceOfElementLocated(By.id("dsdsdsdsdssdds")));
         driver.close();
     }
 

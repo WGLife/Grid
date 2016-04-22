@@ -10,7 +10,6 @@ public class Test2 {
 
     @Test
     public void test2() throws MalformedURLException {
-        System.out.println("Test2 class test2");
         DesiredCapabilities caps = DesiredCapabilities.firefox();
         WebDriver driver = new RemoteWebDriver(new URL("http://172.16.64.131:4444/wd/hub"), caps);
         driver.navigate().to("https://mail.ru");
@@ -19,7 +18,6 @@ public class Test2 {
 
     @Test
     public void test3() throws MalformedURLException {
-        System.out.println("Test2 class test3");
         DesiredCapabilities caps = DesiredCapabilities.firefox();
         WebDriver driver = new RemoteWebDriver(new URL("http://172.16.64.131:4444/wd/hub"), caps);
         driver.navigate().to("https://mail.ru");

@@ -13,7 +13,7 @@ public class Test1 {
         DesiredCapabilities capabilities = DesiredCapabilities.firefox();
         WebDriver driver = new RemoteWebDriver(new URL("http://172.16.64.131:4444/wd/hub"), capabilities);
         driver.navigate().to("https://mail.ru");
-        Thread.sleep(9000);
+        Thread.sleep(9030);
         driver.close();
     }
 }

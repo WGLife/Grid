@@ -10,8 +10,8 @@ public class Test1 {
 
     @Test
     public void test1() throws MalformedURLException, InterruptedException {
-        DesiredCapabilities caps = DesiredCapabilities.firefox();
-        WebDriver driver = new RemoteWebDriver(new URL("http://172.16.64.131:4444/wd/hub"), caps);
+        DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+        WebDriver driver = new RemoteWebDriver(new URL("http://172.16.64.131:4444/wd/hub"), capabilities);
         driver.navigate().to("https://mail.ru");
         Thread.sleep(9000);
         driver.close();
